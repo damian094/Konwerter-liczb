@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konwerter liczbowy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/afd9c31c73.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Konwerter</h1>
+        <h2>liczbowy</h2>
+    </header>
+    <main>
+        <form>
+            <div class="form-section">
+                <p class="convert-paragraph">Konwertuj z systemu:</p>
+                <select name="Konwertuj z" id="convert-From">
+                    <option selected value="default">-wybierz-</option>
+                    <option value="binary">binarnego </option>
+                    <option value="octal">ósemkowego</option>
+                    <option value="decimal">dziesiętnego</option>
+                    <option value="hexadecimal">szesnastkowego</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <p class="convert-paragraph">Konwertuj do systemu:</p>
+                <select name="Konwertuj do" id="convert-To">
+                    <option selected value="default">-wybierz-</option>
+                    <option class="binary" value="binary">binarnego</option>
+                    <option class="octal" value="octal">ósemkowego</option>
+                    <option class="decimal" value="decimal">dziesiętnego</option>
+                    <option class="hexadecimal" value="hexadecimal">szesnastkowego</option>
+                </select>
+            </div>
+            <input maxlength="50" type="text" placeholder="" class="convertText">
+            <div class="btns">
+                <button class="resultBtn">Pokaż wynik</button>
+                <button class="refreshBtn"><i class="fas fa-sync-alt"></i></button>
+            </div>
+            <p class="result-paragraph">Wynik:<span></span></p>
+        </form>
+
+    </main>
+    <aside>
+        <div class="left"></div>
+
+        <div class="right"></div>
+        <p class="hello">Witaj.</p>
+    </aside>
+    <script src="main.js">
+
+    </script>
+</body>
+
+</html>

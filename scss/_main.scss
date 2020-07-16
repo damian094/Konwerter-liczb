@@ -3,8 +3,6 @@ body {
     @include flex(column, stretch, stretch);
     background-color: $bgc-body;
     min-height: 100vh;
-    max-width: 100vw;
-    overflow-x: hidden;
 
     header {
         @include size(auto, 100vw);
@@ -280,38 +278,38 @@ body {
     }
 }
 
-@media (orientation: landscape) and (max-width: 1023px) {
-    body {
+// @media (orientation: landscape) and (max-width: 1023px) {
+//     body {
 
-        main {
-            max-height: 60vh;
+//         main {
+//             max-height: 60vh;
 
 
-            form {
+//             form {
 
-                .form-section {
-                    padding: 5px;
-                    height: auto;
+//                 .form-section {
+//                     padding: 5px;
+//                     height: auto;
 
-                }
+//                 }
 
-                .convertText {
-                    line-height: 18px;
-                    margin: 5px;
-                }
+//                 .convertText {
+//                     line-height: 18px;
+//                     margin: 5px;
+//                 }
 
-                .btns {
-                    margin: 3px;
-                }
+//                 .btns {
+//                     margin: 3px;
+//                 }
 
-                .result-paragraph {
-                    height: auto;
-                    padding: 10px 5px;
-                }
-            }
-        }
-    }
-}
+//                 .result-paragraph {
+//                     height: auto;
+//                     padding: 10px 5px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 @media (min-width: 1280px) {
     body {

@@ -2,7 +2,6 @@ body {
     @include size(auto, 100vw);
     @include flex(column, stretch, stretch);
     background-color: $bgc-body;
-    overflow: hidden;
     min-height: 100vh;
 
     header {

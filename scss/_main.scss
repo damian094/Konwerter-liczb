@@ -1,8 +1,12 @@
 body {
-    @include size(100vh, 100vw);
+    @include size(auto, 100%);
     @include flex(column, stretch, stretch);
     background-color: $bgc-body;
-    overflow: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    @include flex(column, center, center);
+    background-color: $bgc-body;
+    overflow-x: hidden;
 
     header {
         @include size(auto, 100vw);

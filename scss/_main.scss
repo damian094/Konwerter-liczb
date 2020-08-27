@@ -1,9 +1,8 @@
 body {
-    width: 100vw;
-    min-height: 100vh;
-    @include flex(column, center, center);
+    @include size(100vh, 100vw);
+    @include flex(column, stretch, stretch);
     background-color: $bgc-body;
-    overflow-x: hidden;
+    overflow: hidden;
 
     header {
         @include size(auto, 100vw);
@@ -134,9 +133,16 @@ body {
             top: 0;
             left: 0;
             @include flex(row, center, center);
-            font-size: 40px;
-            color: white;
-            animation: 1s hideP both;
+            flex-wrap: nowrap;
+            font-size: 35px;
+            color: $color;
+            animation: .8s hideP both;
+
+        }
+
+        &>p.author {
+            top: 7%;
+            font-size: 30px;
         }
 
         &>div {
@@ -147,12 +153,12 @@ body {
 
             &.left {
                 left: 0;
-                animation: 2s 1s hideLeft linear both;
+                animation: 1.3s 1s hideLeft linear both;
             }
 
             &.right {
                 right: 0;
-                animation: 2s 1s hideRight linear both;
+                animation: 1.3s 1s hideRight linear both;
             }
         }
     }

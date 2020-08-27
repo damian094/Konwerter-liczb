@@ -11,8 +11,8 @@ html {
 }
 
 body {
+  height: 100vh;
   width: 100vw;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,14 +22,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   background-color: #eee;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body header {
@@ -274,10 +274,17 @@ body aside > p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 40px;
-  color: white;
-  -webkit-animation: 1s hideP both;
-          animation: 1s hideP both;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 35px;
+  color: #6384FD;
+  -webkit-animation: .8s hideP both;
+          animation: .8s hideP both;
+}
+
+body aside > p.author {
+  top: 7%;
+  font-size: 30px;
 }
 
 body aside > div {
@@ -290,14 +297,14 @@ body aside > div {
 
 body aside > div.left {
   left: 0;
-  -webkit-animation: 2s 1s hideLeft linear both;
-          animation: 2s 1s hideLeft linear both;
+  -webkit-animation: 1.3s 1s hideLeft linear both;
+          animation: 1.3s 1s hideLeft linear both;
 }
 
 body aside > div.right {
   right: 0;
-  -webkit-animation: 2s 1s hideRight linear both;
-          animation: 2s 1s hideRight linear both;
+  -webkit-animation: 1.3s 1s hideRight linear both;
+          animation: 1.3s 1s hideRight linear both;
 }
 
 @-webkit-keyframes hideP {

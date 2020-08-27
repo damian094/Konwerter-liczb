@@ -118,7 +118,7 @@ setInterval(delateOptions, 0)
 
 //Zastrzeżone znaki do danych systemów liczbowych
 const regBinary = new RegExp('[2-9]|[a-z]', 'g')
-const regOctal = new RegExp('9|[a-z]', 'g')
+const regOctal = new RegExp('[8-9]|[a-z]', 'g')
 const regDecimal = new RegExp('[a-z]', 'g')
 const regHexadecimal = new RegExp('[g-z]', 'g')
 
@@ -169,9 +169,11 @@ btnRefresh.addEventListener('click', refreshSite)
 //Usunięcie paragafu
 
 const pHello = document.querySelector('.hello')
+const pAuthor = document.querySelector('.author')
 
 function delateParagraph() {
     pHello.style.display = 'none'
+    pAuthor.style.display = 'none'
 }
 
 setTimeout(delateParagraph, 1000)
